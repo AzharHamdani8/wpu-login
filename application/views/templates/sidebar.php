@@ -63,7 +63,7 @@ $querySubMenu = " SELECT *
 </li>
 
 <?php endforeach; ?>
-<hr class="sidebar-divider">
+<hr class="sidebar-divider mt-3">
 <?php endforeach; ?>
 
 
