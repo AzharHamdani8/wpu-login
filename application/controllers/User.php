@@ -2,6 +2,13 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class User extends CI_Controller {
+    public function __construct() 
+    {
+        parent:: __construct();
+        if (!$this->session->userdata('email')) {
+            redirect('auth'); // kembali ke halaman login jika tidak login terlebih dahulu
+        }
+    }
 
     public function index() {
         $data['title'] = 'My Profile';
